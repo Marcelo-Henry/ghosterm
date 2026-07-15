@@ -1,0 +1,32 @@
+{
+  "name": "ghosterm",
+  "version": "0.1.0",
+  "description": "Automate terminal and TUI applications with virtual sessions, screen snapshots, and keyboard input for AI agents.",
+  "type": "module",
+  "bin": {
+    "ghosterm": "./dist/cli.js"
+  },
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx src/cli.ts",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "dependencies": {
+    "node-pty": "^1.0.0",
+    "@xterm/headless": "^5.5.0",
+    "@napi-rs/canvas": "^1.0.2"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.7.0",
+    "vitest": "^3.0.0"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "license": "MIT"
+}
